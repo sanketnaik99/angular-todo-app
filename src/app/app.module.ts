@@ -8,11 +8,15 @@ import { MdcButtonModule, MdcTextFieldModule, MdcIconModule, MdcCardModule, MdcI
 import { HomeComponent } from "./home/home.component";
 import { InputComponent } from "./components/input/input.component";
 import { TodoListComponent } from "./components/todo-list/todo-list.component";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [AppComponent, HomeComponent, InputComponent, TodoListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
 
     //MDC COMPONENTS
     MdcTextFieldModule,

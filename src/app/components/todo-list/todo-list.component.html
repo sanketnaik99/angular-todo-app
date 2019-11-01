@@ -1,13 +1,14 @@
 <mdc-card class="card">
   <mdc-card-primary-action>
     <div class="card-primary">
-      <h2 class="card-title" mdcHeadline6>{{ title }}</h2>
+      <h2 class="card-title" mdcHeadline6 [ngClass]="{ complete: isComplete, incomplete: !isComplete }">{{ title }}</h2>
     </div>
   </mdc-card-primary-action>
   <mdc-card-actions>
     <mdc-card-action-icons>
-      <button mdcIconButton mdcCardAction="icon" class="remove" icon="cancel"></button>
-      <button mdcIconButton mdcCardAction="icon" class="done" icon="done"></button>
+      <button mdcIconButton mdcCardAction="icon" class="remove" icon="cancel" (click)="toDoRemoved(id)"></button>
+      <button mdcIconButton mdcCardAction="icon" class="done" icon="done" (click)="updateTodo(id, isComplete)" *ngIf="isComplete === false"></button>
+      <button mdcIconButton mdcCardAction="icon" class="undo" icon="undo" (click)="updateTodo(id, isComplete)" *ngIf="isComplete === true"></button>
     </mdc-card-action-icons>
   </mdc-card-actions>
 </mdc-card>

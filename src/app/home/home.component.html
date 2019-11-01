@@ -1,6 +1,23 @@
 <div class="input-section">
-  <app-input></app-input>
+  <app-input (onToDoAdded)="addToDo($event)"></app-input>
 </div>
 <div class="list-section">
-  <app-todo-list *ngFor="let item of list" title="{{ item.title }}"></app-todo-list>
+  <div class="spinner" *ngIf="this.isLoading && !this.noDataPresent">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+  <div *ngIf="!this.isLoading && !this.noDataPresent">
+    <app-todo-list
+      *ngFor="let item of list"
+      title="{{ item.title }}"
+      id="{{ item.id }}"
+      [isComplete]="item.isComplete"
+      (onToDoRemoved)="removeToDo($event)"
+      (onToDoFinished)="finishToDo($event, $event)"
+    ></app-todo-list>
+  </div>
+  <div class="no-posts" *ngIf="!this.isLoading && this.noDataPresent">
+    <img src="assets/empty.png" alt="No Data Present" />
+    <h1>No Tasks Present</h1>
+  </div>
 </div>
