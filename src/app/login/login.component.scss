@@ -1,0 +1,29 @@
+.login {
+  height: 100%;
+  width: 100%;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.row {
+  width: 100%;
+}
+.logo-title {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.google {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.github {
+  margin-top: 10px;
+  padding-bottom: 80px;
+}

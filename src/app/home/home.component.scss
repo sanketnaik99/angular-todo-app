@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 .input-section {
-  background-color: #ced0ce;
+  background-color: #e1e1e1;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -21,11 +21,17 @@ body {
   width: 100%;
   text-align: center;
   img {
+    margin-top: 20px;
     width: 30%;
   }
   h1 {
     font-family: "Roboto", sans-serif;
-    color: #555555;
+    color: #212121;
+  }
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #303030;
   }
 }
 
@@ -42,7 +48,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #f15025;
+  background-color: #4e54c8;
   opacity: 0.6;
   position: absolute;
   top: 0;

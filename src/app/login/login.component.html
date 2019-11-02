@@ -1,0 +1,83 @@
+<div class="login">
+  <section class="logo-title">
+    <div class="row center-xs around-xs middle-xs row">
+      <div class="col-xs-12 col-sm-4 col-md-5 col-lg-3 title">
+        <h1>ToDo</h1>
+      </div>
+      <div
+        class="col-xs-12 col-sm-8
+      col-md-5
+      col-lg-3"
+      >
+        <img width="300" src="assets/tasks.png" alt="Todo Logo" />
+      </div>
+    </div>
+  </section>
+  <section class="login-buttons">
+    <div class="row center-xs around-xs google row">
+      <div class="col-xs">
+        <button mdc-button secondary raised (click)="googleLogin()">
+          <mdc-icon
+            ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 172 172" style=" fill:#000000;">
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#ffffff">
+                  <path
+                    d="M89.42656,165.12c-43.63156,0 -79.13344,-35.48844 -79.13344,-79.12c0,-43.63156 35.50187,-79.12 79.13344,-79.12c19.76656,0 38.68656,7.32344 53.29312,20.62656l2.66063,2.43219l-26.09563,26.09563l-2.41875,-2.06938c-7.65937,-6.5575 -17.40156,-10.17219 -27.43937,-10.17219c-23.27375,0 -42.22063,18.93344 -42.22063,42.20719c0,23.27375 18.94688,42.20719 42.22063,42.20719c16.78344,0 30.04625,-8.57312 36.29469,-23.17969h-39.73469v-35.62281l77.57469,0.1075l0.57781,2.72781c4.04469,19.20219 0.80625,47.44781 -15.5875,67.65781c-13.57188,16.72969 -33.45938,25.22219 -59.125,25.22219z"
+                  ></path>
+                </g>
+              </g></svg></mdc-icon
+          >Login With Google
+        </button>
+      </div>
+    </div>
+
+    <div class="row center-xs around-xs github row">
+      <div class="col-xs">
+        <button mdc-button secondary raised (click)="githubLogin()">
+          <mdc-icon
+            ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 172 172" style=" fill:#000000;">
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#ffffff">
+                  <path
+                    d="M113.52,99.76c-6.18125,0 -10.32,5.21375 -10.32,13.76c0,8.54625 3.06375,17.36125 10.32,17.2c7.6325,-0.17469 10.38719,-7.64594 10.32,-17.2c-0.05375,-8.54625 -4.15219,-13.76 -10.32,-13.76zM152.26031,58.70844c0.94062,-4.6225 1.34375,-20.98937 -5.44219,-38.06844c0,0 -15.5875,1.70656 -39.15688,17.88531c-4.93156,-1.37063 -13.30312,-2.05594 -21.66125,-2.05594c-8.35812,0 -16.71625,0.68531 -21.67469,2.0425c-23.55594,-16.16531 -39.13,-17.87188 -39.13,-17.87188c-6.79938,17.07906 -6.46344,33.05625 -5.45563,38.06844c-7.98187,8.66719 -12.85969,19.06781 -12.85969,33.28469c0,61.79906 51.2775,62.79344 64.21781,62.79344c2.92937,0 8.74781,0 14.90219,0.01344c6.15438,-0.01344 11.98625,-0.01344 14.90219,-0.01344c12.94031,0 64.21781,-0.99438 64.21781,-62.79344c0,-14.21688 -4.87781,-24.6175 -12.85969,-33.28469zM86.48375,147.92h-0.48375c-32.43812,0 -57.9425,-4.60906 -57.9425,-36.13344c0,-7.55188 2.67406,-14.55281 9.00313,-20.37125c10.56187,-9.70188 28.42031,-4.56875 48.6975,-4.56875c0.08062,0 0.41656,0 0.48375,0c20.27719,0 38.14906,-5.11969 48.71094,4.56875c6.32906,5.81844 8.98969,12.81937 8.98969,20.37125c0,31.52437 -25.02062,36.13344 -57.45875,36.13344zM58.48,99.76c-6.16781,0 -10.32,6.93375 -10.32,15.48c0,8.54625 4.15219,15.48 10.32,15.48c6.18125,0 10.32,-6.93375 10.32,-15.48c0,-8.54625 -4.13875,-15.48 -10.32,-15.48z"
+                  ></path>
+                </g>
+              </g></svg></mdc-icon
+          >Login With Github
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
